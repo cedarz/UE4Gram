@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net" modified="2023-10-31T12:32:20.393Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="hiLyoqazzrFhV8Z_P2ys" version="22.0.8" type="github" pages="2">
+  <diagram name="第 1 页" id="ach_8t_THAJOCDPu6Ulr">
+    <mxGraphModel dx="1313" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ejGEZB8opVFUiISUi8wy-1" value="IRefCountedObject" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="560" y="310" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ejGEZB8opVFUiISUi8wy-2" value="FD3D11BaseShaderResource" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="510" y="390" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ejGEZB8opVFUiISUi8wy-3" value="FD3D11TextureBase&lt;br&gt;TRefCountPtr&amp;lt;ID3D11Resource&amp;gt; Resource" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="510" y="430" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ejGEZB8opVFUiISUi8wy-6" value="template&amp;lt;typename BaseResourceType&amp;gt; TD3D11Texture2D: public BaseResourceType, public FD3D11TextureBase&lt;br&gt;TD3D11Texture2D&amp;lt;FD3D11BaseTexture2D&amp;gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; FD3D11Texture2D" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="219" y="510" width="390" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ejGEZB8opVFUiISUi8wy-7" value="FD3D11BaseTexture2D" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="219" y="450" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ejGEZB8opVFUiISUi8wy-8" value="FRHITexture2D" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="225" y="390" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ejGEZB8opVFUiISUi8wy-9" value="FRHITexture" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="210" y="310" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ejGEZB8opVFUiISUi8wy-10" value="FRHIResource" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="210" y="260" width="100" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="WlK-a0K8C3oaISJYRkWt" name="第 2 页">
+    <mxGraphModel dx="1970" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
