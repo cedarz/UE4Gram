@@ -1,12 +1,9 @@
-<mxfile host="app.diagrams.net" modified="2023-11-02T04:35:29.704Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="BV8Q9atAMNPVamMYA7UZ" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-02T04:36:08.591Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="7Yc9p_FyxRySQmJfwrPf" version="22.0.8" type="github">
   <diagram name="第 1 页" id="0i_YJYlvbd3N0-5sLxfa">
-    <mxGraphModel dx="985" dy="1614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="985" dy="445" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="gJQWNaTM6ZV7WOAYiR7F-2" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://interplayoflight.files.wordpress.com/2017/10/image12.png;" vertex="1" parent="1">
-          <mxGeometry x="140" y="-50" width="194.11" height="190" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
