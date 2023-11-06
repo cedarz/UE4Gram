@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-06T03:12:47.640Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="qeAUEY3d-BMeNIXmmpPH" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-06T03:29:36.776Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="ryhtMmrTsLP2_wWiSfZq" version="22.0.8" type="github">
   <diagram name="第 1 页" id="Ze0jnDnfLPyHOgXYB_ot">
     <mxGraphModel dx="1970" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -84,8 +84,8 @@
         <mxCell id="3Jz11YxkzCiiRIhrIA6I-3" value="Velocity" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="71.25" y="530" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="3Jz11YxkzCiiRIhrIA6I-7" value="2083:RenderVelocities" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="530" width="130" height="30" as="geometry" />
+        <mxCell id="3Jz11YxkzCiiRIhrIA6I-7" value="2083:RenderVelocities&lt;br&gt;2451: after translucency" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="530" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3Jz11YxkzCiiRIhrIA6I-8" value="Translucency" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="67.5" y="880" width="100" height="30" as="geometry" />
@@ -93,8 +93,14 @@
         <mxCell id="3Jz11YxkzCiiRIhrIA6I-9" value="2180:RenderDiffuseIndirectAndAmbientOcclusion" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="660" width="270" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="3Jz11YxkzCiiRIhrIA6I-10" value="2316:RenderTranslucency" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="880" width="140" height="30" as="geometry" />
+        <mxCell id="3Jz11YxkzCiiRIhrIA6I-10" value="2316/2435:RenderTranslucency" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="880" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Jz11YxkzCiiRIhrIA6I-12" value="2632:AddPostProcessingPasses" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="950" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Jz11YxkzCiiRIhrIA6I-13" value="RenderFinish" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="68" y="1020" width="92" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
