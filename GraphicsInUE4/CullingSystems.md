@@ -10,7 +10,7 @@ FSceneView::ViewFrustum在GetViewFrustumBounds中完成初始化，
 <img src="./CullingSystems/ExtractFrustmPlanesFromViewProjectionMatrix.png" alt="Extract Frustm Planes From ViewProjection Matrix" style="zoom:50%;" />
 
 <div align="center">
-	<img src="./CullingSystems/ExtractFrustmPlanesFromViewProjectionMatrix.png" alt="Extract Frustm Planes From ViewProjection Matrix" width="600" />
+	<img src="./CullingSystems/ExtractFrustmPlanesFromViewProjectionMatrix.png" alt="Extract Frustm Planes From ViewProjection Matrix" width="800" />
 </div>
 
 
