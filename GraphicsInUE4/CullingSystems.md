@@ -13,7 +13,7 @@ FrustumCull首先有一个以距离为Cull标准的distance cull，然后是frus
 包围盒的中心点为$`(O_x, O_y, O_z)`$，包围盒大小的一半为$`(E_x, E_y, E_z)`$，顶点为$`(O_x \pm E_x, O_y \pm E_y, O_z \pm E_z)`$，那么顶点到平面的距离为
 $$(O_x \pm E_x) * X + (O_y \pm E_y) * Y + (O_z \pm E_z) * Z - W = (O_x * X + O_y * Y + O_z * Z - W) + (\pm E_x * X \pm E_y * Y \pm E_z * Z)$$
 令$`D_o =  (O_x * X + O_y * Y + O_z * Z - W)`$, $`D_e = |E_x| * X + |E_y| * Y + |E_z| * Z`$
-其中$`(\pm E_x * X \pm E_y * Y \pm E_z * Z) \in [-D_e, D_e]`$, 包围盒顶点到平面的最小距离为$`D_min = D_o - D_e`$, 如果$`D_min > 0`$，包围盒必然在视锥体外，可以安全剔除。
+其中$`(\pm E_x * X \pm E_y * Y \pm E_z * Z) \in [-D_e, D_e]`$, 包围盒顶点到平面的最小距离为$`D_{min} = D_o - D_e`$, 如果$`D_{min} > 0`$，包围盒必然在视锥体外，可以安全剔除。
 
 <img src="./CullingSystems/IntersectBox8Plane.png" alt="Intersect Box 8 Plane" width="800" />
 
