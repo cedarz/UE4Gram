@@ -1,3 +1,16 @@
+# 剔除方法
+---------
+## Frustum Culling
+## Software Occlusion Culling
+## Hardware Occlusion Queries
+## HZB Occlusion Culling
+## Precomputed Visibility
+- [UE预计算遮挡剔除（PVS）全解析](https://zhuanlan.zhihu.com/p/266592981)
+- https://zhuanlan.zhihu.com/p/565197985
+## Others
+- Geometry shader Based: https://www.rastergrid.com/blog/2010/02/instance-culling-using-geometry-shaders/
+
+- https://hannosprogrammingblog.blogspot.com/2017/11/two-phase-occlusion-culling-part-1.html
 
 # UE4 Case in InitViews
 UE4中Frustum放在FSceneRenderer中的Views（FViewInfo，继承自FSceneView）中，具体点就是通过FSceneView::ViewFrustum(FConvexVolume)变量来维护，包含6个平面。看一下平面的定义FPlane，UE4中一个平面的定义又XYZ的三维向量和常数W组成，从代码注释中可以看到，对应平面方程Xx+Yy+Zz=W的四个系数，注意W在方程式的右边。（X, Y, Z)是平面的法线，-W为原点到平面的有符号距离（signed distance，法线为单位法线的时）。
@@ -16,6 +29,11 @@ $$(O_x \pm E_x) * X + (O_y \pm E_y) * Y + (O_z \pm E_z) * Z - W = (O_x * X + O_y
 其中$`(\pm E_x * X \pm E_y * Y \pm E_z * Z) \in [-D_e, D_e]`$, 包围盒顶点到平面的最小距离为$`D_{min} = D_o - D_e`$, 如果$`D_{min} > 0`$，包围盒必然在视锥体外，可以安全剔除。
 
 <img src="./CullingSystems/IntersectBox8Plane.png" alt="Intersect Box 8 Plane" width="800" />
+
+# Refs
+<!-- hzb why sample 2x2, 4x4 for ue -->
+- https://www.rastergrid.com/blog/2010/10/hierarchical-z-map-based-occlusion-culling/
+- https://www.rastergrid.com/blog/2010/10/opengl-4-0-mountains-demo-released/
 
 <!-- $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$ -->
 [^1]: Fast Extraction of Viewing Frustum Planes from the World-View-Projection Matrix
