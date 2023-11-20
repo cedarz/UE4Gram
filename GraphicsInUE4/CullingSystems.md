@@ -11,8 +11,17 @@
 - Geometry shader Based: https://www.rastergrid.com/blog/2010/02/instance-culling-using-geometry-shaders/
 
 - https://hannosprogrammingblog.blogspot.com/2017/11/two-phase-occlusion-culling-part-1.html
+- https://web.archive.org/web/20221104125234/https://cesium.com/blog/2022/08/18/occlusion-culling-cesium-for-unreal/
+> To implement occlusion culling in practice, each object should have a precomputed, well-fit, bounding volume that contains all of the geometry. Generally, oriented bounding boxes (OBBs) fit best (e.g., buildings can often be bound tightly with OBBs). Axis aligned bounding boxes may have a slightly worse fit, but may sometimes be preferred due to easier integration into scene octrees. Bounding spheres are usually the worst fitting and lead to extremely conservative occlusion results.
 
 # UE4 Case in InitViews
+
+## UE4 culling的调试方法
+- r.VisualizeOccludedPrimitives
+- r.Mobile.AllowSoftwareOcclusion
+- r.HZBOcclusion
+
+## Frustum Cull
 UE4中Frustum放在FSceneRenderer中的Views（FViewInfo，继承自FSceneView）中，具体点就是通过FSceneView::ViewFrustum(FConvexVolume)变量来维护，包含6个平面。看一下平面的定义FPlane，UE4中一个平面的定义又XYZ的三维向量和常数W组成，从代码注释中可以看到，对应平面方程Xx+Yy+Zz=W的四个系数，注意W在方程式的右边。（X, Y, Z)是平面的法线，-W为原点到平面的有符号距离（signed distance，法线为单位法线的时）。
 <!-- ![FPlane Definition](./CullingSystems/FPlaneDefinition.png){:height="50%" width="50%"} -->
 <img src="./CullingSystems/FPlaneDefinition.png" alt="[FPlane Definition" width="800" />
