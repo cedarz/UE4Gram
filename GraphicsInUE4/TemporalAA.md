@@ -49,6 +49,7 @@ NewHistoryTexture是FRDGTexture类型，作为当前帧的输出，如何成为�
 However, the extraction is deferred until the graph has executed; this is because the resource may be allocated during execution based on the lifetime of the resource in the graph,The API therefore exposes QueueTextureExtraction, which allows you to provide a pointer which will be filled upon execution of the graph. 
 
 <img src="./TemporalAA/QueueTextureExtraction.png" alt="RDG Queue Texture Extraction" width="800" />
+
 ```
 {
     View.PrevViewInfo = ViewState->PrevFrameViewInfo;
