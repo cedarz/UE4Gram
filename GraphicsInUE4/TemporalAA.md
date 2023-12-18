@@ -11,7 +11,7 @@ ViewUniformShaderParameters.ClipToPrevClip = InvViewProj * PrevViewProj;
 ## 细节
 
 1. history buffer的维护
-history buffer是由View.PrevViewInfo.TemporalAAHistory和View.ViewState->PrevFrameViewInfo.TemporalAAHistory维护，保存在FTemporalAAHistory的RT[]成员中。在AddGen4MainTemporalAAPasses中，通过AddTemporalAAPass的InputHistory(View.PrevViewInfo.TemporalAAHistory）/OutputHistory(View.ViewState->PrevFrameViewInfo.TemporalAAHistory)参数传入/传出。
+history buffer是由View.PrevViewInfo.TemporalAAHistory和View.ViewState->PrevFrameViewInfo.TemporalAAHistory维护，保存在FTemporalAAHistory的RT[]成员中。在AddGen4MainTemporalAAPasses中，通过AddTemporalAAPass的InputHistory(View.PrevViewInfo.TemporalAAHistory）/OutputHistory(View.ViewState->PrevFrameViewInfo.TemporalAAHistory)参数传入/传出，这俩参数的类型都是FTemporalAAHistory。
 ```
 const FTemporalAAHistory& InputHistory = View.PrevViewInfo.TemporalAAHistory;
 FTemporalAAHistory& OutputHistory = View.ViewState->PrevFrameViewInfo.TemporalAAHistory;
@@ -62,3 +62,5 @@ if (!View.bStatePrevViewInfoIsReadOnly)
 }
 ```
 2. ScreenPosToHistoryBufferUV
+
+3. sample position的处理？
