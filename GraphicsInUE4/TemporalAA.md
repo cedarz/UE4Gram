@@ -72,4 +72,17 @@ if (!View.bStatePrevViewInfoIsReadOnly)
 ```
 2. ScreenPosToHistoryBufferUV
 
-3. sample position的处理？
+3. sample position的处理
+
+4. blend factor
+UE4的TAAStandalone.usf实现RGBToYCoCg中，转换矩阵乘了4，得到的luminance也是真实的4倍，根据[^1]3.3.1介绍，blend factor为$`w(c) = \frac{1}{1 + L(c)}`$，具体实践也相应的体现了4倍。
+```
+float HdrWeight4(float3 Color, float Exposure)
+{
+	return rcp(Luma4(Color) * Exposure + 4.0); // Luma4得到4倍的亮度，在最终WeightedLerpFactors的计算中，4被约掉
+}
+```
+
+
+-------------
+[^1]: A Survey of Temporal Antialiasing Techniques
