@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-04T07:40:09.667Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="RXtEC2W4Z_32Sg_12Vur" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-04T07:41:24.428Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="dBG05cWae1_jFmTUU0ux" version="22.1.16" type="github">
   <diagram name="第 1 页" id="DxylzfDZrgo188qfIz2o">
     <mxGraphModel dx="1823" dy="891" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -37,16 +37,19 @@
           <mxGeometry x="640" y="325" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-20" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="640" y="426.25" width="430" height="163.75" as="geometry" />
+          <mxGeometry x="640" y="426.25" width="430" height="203.75" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-21" value="Precomputed Visibility（Precomputed Visibility Volumes）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="650" y="440" width="340" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-24" value="Mobile：Software Occlusion" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="650" y="493.12" width="340" height="30" as="geometry" />
+          <mxGeometry x="650" y="493.12" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="KZs2u-2fTuZ561ybV9q9-25" value="Mobile：Software Occlusion" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="650" y="540" width="340" height="30" as="geometry" />
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-25" value="HZB Occlusion" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="650" y="540" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-26" value="Hardware Occlusion Query" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="650" y="585" width="190" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
