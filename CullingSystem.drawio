@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-04T08:37:23.136Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="7lWLYgERwFOcZL_sVpWM" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-04T09:09:50.811Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="0hMU7PmMKn1D1v6XHr5j" version="22.1.16" type="github">
   <diagram name="第 1 页" id="DxylzfDZrgo188qfIz2o">
     <mxGraphModel dx="1823" dy="891" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,10 +8,10 @@
           <mxGeometry x="60" y="220" width="130" height="40" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-8" value="InitViews" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="340" width="110" height="30" as="geometry" />
+          <mxGeometry x="130" y="340" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-9" value="ComputeViewVisibility" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="340" width="130" height="30" as="geometry" />
+          <mxGeometry x="270" y="340" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-12" value="View.PrimitiveVisibilityMap.Init" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="230" width="170" height="40" as="geometry" />
@@ -58,40 +58,52 @@
           <mxGeometry x="60" y="60" width="340" height="100" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-30" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1127.5" y="423.76" width="435" height="258.74" as="geometry" />
+          <mxGeometry x="1090" y="425" width="430" height="255" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-32" value="ViewState-&amp;gt;HZBOcclusionTests" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1140" y="430" width="190" height="46.88" as="geometry" />
+          <mxGeometry x="1102.5" y="431.24" width="190" height="46.88" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-33" value="HZB or HOQ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1100" y="391.26" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-34" value="Hardware Occlusion Query" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1360" y="430" width="190" height="46.88" as="geometry" />
+          <mxGeometry x="1322.5" y="431.24" width="190" height="46.88" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-35" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-90;" vertex="1" parent="1">
-          <mxGeometry x="1325" y="446.88" width="40" height="101.88" as="geometry" />
+          <mxGeometry x="1287.5" y="448.12" width="40" height="101.88" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-36" value="FetchVisibilityForPrimitives&lt;br&gt;FetchVisibilityForPrimitives_Range" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1242.5" y="516.88" width="205" height="60" as="geometry" />
+          <mxGeometry x="1205" y="518.12" width="205" height="60" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-37" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" vertex="1" parent="1">
-          <mxGeometry x="1325" y="548.76" width="40" height="98.13" as="geometry" />
+          <mxGeometry x="1287.5" y="550" width="40" height="98.13" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-39" value="PrimitiveOcclusionHistory-&amp;gt;GetQueryForReading&lt;br style=&quot;font-size: 9px;&quot;&gt;GDynamicRHI-&amp;gt;RHIGetRenderQueryResult&lt;br&gt;PrimitiveOcclusionHistory-&amp;gt;SetCurrentQuery&lt;br&gt;View.IndividualOcclusionQueries.BatchPrimitive&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;fontSize=9;" vertex="1" parent="1">
-          <mxGeometry x="1130" y="616.88" width="200" height="53.12" as="geometry" />
+          <mxGeometry x="1092.5" y="618.12" width="200" height="53.12" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-40" value="HZBOcclusionTests.IsVisible&lt;br&gt;HZBOcclusionTests.AddBounds" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1360" y="616.88" width="190" height="43.12" as="geometry" />
+          <mxGeometry x="1322.5" y="618.12" width="190" height="43.12" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-45" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-90;" vertex="1" parent="1">
-          <mxGeometry x="1325" y="640" width="40" height="101.88" as="geometry" />
+          <mxGeometry x="1287.5" y="641.24" width="40" height="101.88" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-46" value="PrePass" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="790" width="110" height="30" as="geometry" />
+          <mxGeometry x="130" y="730" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-47" value="RenderOcclusion" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="920" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-48" value="BeginOcclusionTests" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="880" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KZs2u-2fTuZ561ybV9q9-49" target="KZs2u-2fTuZ561ybV9q9-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-49" value="RenderHzb" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="970" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-54" value="1.&amp;nbsp;BuildHZB&lt;br&gt;2.&amp;nbsp;SubmitHZB(FHZBOcclusionTester::Submit)" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="640" y="970" width="260" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
