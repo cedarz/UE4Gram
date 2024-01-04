@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-04T07:30:59.745Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="-UqvaCpqY04KL9bZGx_Y" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-04T07:36:32.595Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="x9_ARmry1Z3UUeL70zxl" version="22.1.16" type="github">
   <diagram name="第 1 页" id="DxylzfDZrgo188qfIz2o">
     <mxGraphModel dx="1823" dy="891" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -25,17 +25,22 @@
         <mxCell id="KZs2u-2fTuZ561ybV9q9-14" value="&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 14px;&quot;&gt;剔除系统的任务就是完成对View.PrimitiveVisibilityMap的赋值&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="50" y="90" width="440" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="KZs2u-2fTuZ561ybV9q9-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KZs2u-2fTuZ561ybV9q9-15" target="KZs2u-2fTuZ561ybV9q9-18">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KZs2u-2fTuZ561ybV9q9-15" target="KZs2u-2fTuZ561ybV9q9-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="487.5" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-15" value="OcclusionCull" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="472.5" width="120" height="30" as="geometry" />
+          <mxGeometry x="440" y="493.13" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="KZs2u-2fTuZ561ybV9q9-16" value="Distance Cull&lt;br&gt;Frustum Cull" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-16" value="1. Distance Cull&lt;br&gt;2. View Frustum Cull" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="325" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="KZs2u-2fTuZ561ybV9q9-18" value="" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="640" y="425" width="240" height="125" as="geometry" />
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-20" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="426.25" width="430" height="163.75" as="geometry" />
+        </mxCell>
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-21" value="Precomputed Visibility（Precomputed Visibility Volumes）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="440" width="340" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
