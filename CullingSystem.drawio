@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-05T11:15:54.816Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="1vM3cDi43CHwWJ9zER2R" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-05T11:21:01.697Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="R9EkX-mi6x8lu0-QCt5g" version="22.1.16" type="github">
   <diagram name="第 1 页" id="DxylzfDZrgo188qfIz2o">
     <mxGraphModel dx="1671" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -147,10 +147,10 @@
         <mxCell id="KZs2u-2fTuZ561ybV9q9-68" value="组装下一帧的Occlusion Queries或HZB Bounds" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1110" y="825" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="KZs2u-2fTuZ561ybV9q9-69" value="1. UE4里使用了多种剔除的策略，包括必须的View Frustum Culling和Occlusion Culling&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Occlusion Culling&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-69" value="1. UE4里使用了多种剔除的策略，包括必须的View Frustum Culling和Occlusion Culling&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Occlusion Culling存在&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Occlusion culling one frame lag&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1010" y="70" width="510" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="KZs2u-2fTuZ561ybV9q9-70" value="1.&amp;nbsp;&lt;a href=&quot;https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/VisibilityCulling/&quot;&gt;Visibility and Occlusion Culling&lt;/a&gt;: https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/VisibilityCulling/&lt;br&gt;2.&amp;nbsp;1 frame of latency:&amp;nbsp;&lt;a href=&quot;https://vkguide.dev/docs/gpudriven/compute_culling/&quot;&gt;Compute based Culling - Vulkan Guide (vkguide.dev)&lt;/a&gt;&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-70" value="1.&amp;nbsp;&lt;a href=&quot;https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/VisibilityCulling/&quot;&gt;Visibility and Occlusion Culling&lt;/a&gt;: https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/VisibilityCulling/&lt;br&gt;2.&amp;nbsp;1 frame of latency:&amp;nbsp;&lt;a href=&quot;https://vkguide.dev/docs/gpudriven/compute_culling/&quot;&gt;Compute based Culling - Vulkan Guide (vkguide.dev)&lt;/a&gt;&lt;br&gt;3.&amp;nbsp;&lt;a href=&quot;https://github.com/nvpro-samples/gl_occlusion_culling&quot;&gt;nvpro-samples/gl_occlusion_culling: OpenGL sample for shader-based occlusion culling (github.com)&lt;/a&gt;&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="560" y="1020" width="970" height="100" as="geometry" />
         </mxCell>
       </root>
