@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-05T03:05:53.149Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="L6qmWV4gk_bC2iog1FUC" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-05T03:06:43.524Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="xugloKwGJdDvKa_swKfk" version="22.1.16" type="github">
   <diagram name="第 1 页" id="DxylzfDZrgo188qfIz2o">
     <mxGraphModel dx="1671" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -69,8 +69,8 @@
         <mxCell id="KZs2u-2fTuZ561ybV9q9-27" value="通常Mobile设备使用Software Occlusion，PC上默认HOQ和HZB只生效其一，通过r.HZBOcclusion和r.AllowOcclusionQueries设置" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="650" y="620" width="350" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="KZs2u-2fTuZ561ybV9q9-28" value="&lt;h1&gt;Culling System&lt;/h1&gt;&lt;p&gt;剔除系统的任务就是完成对View.PrimitiveVisibilityMap的赋值&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="60" y="60" width="340" height="100" as="geometry" />
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-28" value="&lt;h1&gt;Culling System&lt;/h1&gt;&lt;p style=&quot;font-size: 15px;&quot;&gt;剔除系统的根本任务就是完成对View.PrimitiveVisibilityMap的赋值&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="100" width="460" height="100" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-30" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1090" y="425" width="430" height="255" as="geometry" />
