@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-09T06:48:16.491Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="32KSbMzotXgJSbhNJzk-" version="22.1.17" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-09T06:51:40.361Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="r_2P573l78GGPtiGA7RQ" version="22.1.17" type="github">
   <diagram name="第 1 页" id="DxylzfDZrgo188qfIz2o">
     <mxGraphModel dx="1725" dy="895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -132,10 +132,10 @@
         <mxCell id="KZs2u-2fTuZ561ybV9q9-67" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-180;" parent="1" vertex="1">
           <mxGeometry x="910" y="840" width="40" height="101.88" as="geometry" />
         </mxCell>
-        <mxCell id="KZs2u-2fTuZ561ybV9q9-68" value="组装下一帧的Occlusion Queries或HZB Bounds" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1110" y="825" width="130" height="40" as="geometry" />
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-68" value="组装Hardware Occlusion Queries或HZB Bounds并在当前帧发起" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1110" y="825" width="140" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="KZs2u-2fTuZ561ybV9q9-69" value="1. UE4里使用了多种剔除的策略，主要包括必须的View Frustum Culling和Occlusion Culling&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Occlusion Culling使用硬件遮挡查询或者HZB时，都有一帧的延迟&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;one frame lag；另外，Mobile平台上，Software Occlusion会有一帧延迟，HOQ会有两帧延迟&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+        <mxCell id="KZs2u-2fTuZ561ybV9q9-69" value="1. UE4里使用了多种剔除的策略，主要包括必须的View Frustum Culling和Occlusion Culling&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Occlusion Culling使用硬件遮挡查询或者HZB时，都有一帧的延迟&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;one frame lag；另外，Mobile平台上，Software Occlusion会有一帧延迟，HOQ会有两帧延迟&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. 动态OC都使用的PreZ后的depth，即当前帧的depth，在当前帧发起Query，结果供下一帧查询使用&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1010" y="70" width="510" height="250" as="geometry" />
         </mxCell>
         <mxCell id="KZs2u-2fTuZ561ybV9q9-70" value="1.&amp;nbsp;&lt;a href=&quot;https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/VisibilityCulling/&quot;&gt;Visibility and Occlusion Culling&lt;/a&gt;: https://docs.unrealengine.com/4.27/en-US/RenderingAndGraphics/VisibilityCulling/&lt;br&gt;2.&amp;nbsp;1 frame of latency:&amp;nbsp;&lt;a href=&quot;https://vkguide.dev/docs/gpudriven/compute_culling/&quot;&gt;Compute based Culling - Vulkan Guide (vkguide.dev)&lt;/a&gt;&lt;br&gt;3.&amp;nbsp;&lt;a href=&quot;https://github.com/nvpro-samples/gl_occlusion_culling&quot;&gt;nvpro-samples/gl_occlusion_culling: OpenGL sample for shader-based occlusion culling (github.com)&lt;/a&gt;&lt;br&gt;4.&amp;nbsp;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/566148805&quot;&gt;【UE】Draw command的生成 - 知乎 (zhihu.com)&lt;/a&gt;&lt;br&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
