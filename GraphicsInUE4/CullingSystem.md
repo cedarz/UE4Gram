@@ -43,6 +43,7 @@ $$(O_x \pm E_x) * X + (O_y \pm E_y) * Y + (O_z \pm E_z) * Z - W = (O_x * X + O_y
 <!-- hzb why sample 2x2, 4x4 for ue -->
 - https://www.rastergrid.com/blog/2010/10/hierarchical-z-map-based-occlusion-culling/
 - https://www.rastergrid.com/blog/2010/10/opengl-4-0-mountains-demo-released/
+- https://twitter.com/erkaman2/status/1062806036917166093
 
 <!-- $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$ -->
 [^1]: Fast Extraction of Viewing Frustum Planes from the World-View-Projection Matrix
