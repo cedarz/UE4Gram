@@ -39,11 +39,25 @@ $$(O_x \pm E_x) * X + (O_y \pm E_y) * Y + (O_z \pm E_z) * Z - W = (O_x * X + O_y
 
 <img src="./CullingSystem/IntersectBox8Plane.png" alt="Intersect Box 8 Plane" width="800" />
 
+## Software Occlusion
+Software Occlusion相关[CVar](https://zhuanlan.zhihu.com/p/604266555)
+r.Mobile.AllowSoftwareOcclusion：开启/关闭Software Occlusion。
+r.so.MinScreenRadiusForOccluder：设置作为遮挡物的最小屏幕半径，屏幕尺寸小于该值的物体将不能作为遮挡物。
+r.so.MaxDistanceForOccluder：设置作为遮挡物的最远距离，超出该距离的物体不能作为Software Occlusion的遮挡物。
+r.so.MaxOccluderNum：设置遮挡物的最大数量。
+r.so.SIMD：决定是否使用SIMD Routine。
+r.so.VisualizeBuffer：设为1后可以在左上角开启debug buffer，查看rasterized后的遮挡物
+
+设置某个模型为Occluder，需要再Static Mesh窗口设置`LOD For Occluder Mesh`指定使用使用哪一层的LOD来作为模型遮挡物的几何，并调用FStaticMeshOccluderData::Build生成对应SM的遮挡数据（UStaticMesh::OccluderData，FStaticMeshOccluderData）。
+
 # Refs
 <!-- hzb why sample 2x2, 4x4 for ue -->
 - https://www.rastergrid.com/blog/2010/10/hierarchical-z-map-based-occlusion-culling/
 - https://www.rastergrid.com/blog/2010/10/opengl-4-0-mountains-demo-released/
 - https://twitter.com/erkaman2/status/1062806036917166093
+Software Occlusion
+- https://www.intel.com/content/www/us/en/developer/articles/technical/software-occlusion-culling.html
+- https://www.intel.com/content/www/us/en/developer/articles/technical/masked-software-occlusion-culling.html
 
 <!-- $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$ -->
 [^1]: Fast Extraction of Viewing Frustum Planes from the World-View-Projection Matrix
