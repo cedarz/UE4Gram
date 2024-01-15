@@ -58,6 +58,18 @@ r.so.VisualizeBuffer：设为1后可以在左上角开启debug buffer，查看ra
 Software Occlusion
 - https://www.intel.com/content/www/us/en/developer/articles/technical/software-occlusion-culling.html
 - https://www.intel.com/content/www/us/en/developer/articles/technical/masked-software-occlusion-culling.html
+UE4 Projection Matrix Update
+- https://blog.csdn.net/mrbaolong/article/details/117754296
+- Editor: FEditorViewportClient::CalcSceneView(EditorViewportClient.cpp), FReversedZPerspectiveMatrix
+- UE4坐标系统的单位为cm，GNearClippingPlane设定为10？？[实时渲染中的坐标系变换，UE4投影变换](https://zhuanlan.zhihu.com/p/115395322)
+- https://learn.microsoft.com/en-us/windows/win32/direct3d9/projection-transform#a-w-friendly-projection-matrix
+- Reverse Z投影矩阵可以通过正常模式的投影矩阵乘以一个‘z reversal‘矩阵来构造，在[UE4透视投影矩阵](https://zhuanlan.zhihu.com/p/115395322)和[Depth Precision](https://web.archive.org/web/20220807195222/http://dev.theomader.com/depth-precision/)中都可以得到验证
+$$P_{ReverseZ} = \begin{bmatrix}
+1 & 0& 0& 0\\
+0 & 1& 0& 0\\
+0 & 0& -1& 1\\
+0 & 0& 0& 1\\
+\end{bmatrix} * P_{Normal}$$
 
 <!-- $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$ -->
 [^1]: Fast Extraction of Viewing Frustum Planes from the World-View-Projection Matrix
