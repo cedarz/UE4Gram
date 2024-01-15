@@ -64,6 +64,7 @@ UE4 Projection Matrix Update
 - UE4坐标系统的单位为cm，GNearClippingPlane设定为10？？[实时渲染中的坐标系变换，UE4投影变换](https://zhuanlan.zhihu.com/p/115395322)
 - https://learn.microsoft.com/en-us/windows/win32/direct3d9/projection-transform#a-w-friendly-projection-matrix
 - Reverse Z投影矩阵可以通过正常模式的投影矩阵乘以一个‘z reversal‘矩阵来构造，在[UE4透视投影矩阵](https://zhuanlan.zhihu.com/p/115395322)和[Depth Precision](https://web.archive.org/web/20220807195222/http://dev.theomader.com/depth-precision/)中都可以得到验证
+
 $$P_{ReverseZ} = \begin{bmatrix}
 1 & 0& 0& 0\\
 0 & 1& 0& 0\\
