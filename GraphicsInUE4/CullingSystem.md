@@ -72,6 +72,20 @@ $$P_{ReverseZ} = \begin{bmatrix}
 0 & 0& 0& 1\\
 \end{bmatrix} * P_{Normal}$$
 
+得到Reverse Z的透视投影矩阵为，图中是转置后的
+<img src="./CullingSystem/ReverseZNoFarPlane.png" alt="Extract Frustm Planes From ViewProjection Matrix" width="500" />
+
+``` 
+// uint8 ProcessXFormVertex(const FVector4& XFV, float W_CLIP)
+const float W_CLIP = SceneData.ViewProj.M[3][2]; // 也即near plane
+float W = XFV.W;
+if (W < W_CLIP)
+{
+    Flags|= EScreenVertexFlags::ClippedNear;
+}
+```
+`W < W_CLIP`时，clip space坐标为$(_, _, n, w)$，其中`n = W_CLIP, w = z_{e}`，作透视除之后$z_{ndc} = W_CLIP / W > 1, 则该点在near plane的外侧，被视锥剔除。
+
 <!-- $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$ -->
 [^1]: Fast Extraction of Viewing Frustum Planes from the World-View-Projection Matrix
 [^2]: 
