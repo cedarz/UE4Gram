@@ -72,7 +72,8 @@ $$P_{ReverseZ} = \begin{bmatrix}
 0 & 0& 0& 1\\
 \end{bmatrix} * P_{Normal}$$
 
-得到Reverse Z的透视投影矩阵为，图中是转置后的
+得到Reverse Z的透视投影矩阵，图中是转置后的矩阵
+
 <img src="./CullingSystem/ReverseZNoFarPlane.png" alt="Extract Frustm Planes From ViewProjection Matrix" width="500" />
 
 ``` 
