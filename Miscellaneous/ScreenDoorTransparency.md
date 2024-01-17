@@ -7,6 +7,7 @@
 
 ## How
 - https://www.shadertoy.com/view/td2BWV
+- https://www.ronja-tutorials.com/post/042-dithering/
 - https://github.com/gkjohnson/unity-dithered-transparency-shader
 - https://www.youtube.com/watch?v=ieHpTG_P8Q0&t=108s
 
