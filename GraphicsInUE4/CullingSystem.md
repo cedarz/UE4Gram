@@ -50,6 +50,10 @@ Software Occlusion相关[CVar](https://zhuanlan.zhihu.com/p/604266555)设置
 
 设置某个模型为Occluder，需要再Static Mesh窗口设置`LOD For Occluder Mesh`指定使用使用哪一层的LOD来作为模型遮挡物的几何，并调用FStaticMeshOccluderData::Build生成对应SM的遮挡数据（UStaticMesh::OccluderData，FStaticMeshOccluderData）。
 
+TConstSetBitIterator用来遍历TBitArray中所有被设置（set/true/1)的元素。
+
+Software Occlusion针对FrustumCull后的场景，View.PrimitiveVisibilityMap已经包括了视锥剔除的结果，如此，SOC可能有一个小小的优化，如果遮挡物（Occluder）都已经被剔除了，SOC执行阶段收集到的遮挡数据就为空，就可以跳过被遮挡物（Occludee）的遮挡测试。
+
 # Refs
 <!-- hzb why sample 2x2, 4x4 for ue -->
 - https://www.rastergrid.com/blog/2010/10/hierarchical-z-map-based-occlusion-culling/
@@ -60,7 +64,8 @@ Software Occlusion
 - https://www.intel.com/content/www/us/en/developer/articles/technical/masked-software-occlusion-culling.html
 UE4 Projection Matrix Update
 - https://blog.csdn.net/mrbaolong/article/details/117754296
-- Editor: FEditorViewportClient::CalcSceneView(EditorViewportClient.cpp), FReversedZPerspectiveMatrix
+    - Editor: FEditorViewportClient::CalcSceneView(EditorViewportClient.cpp), FReversedZPerspectiveMatrix
+    - CalcSceneView/new FSceneView/SetupViewFrustum
 - UE4坐标系统的单位为cm，GNearClippingPlane设定为10？？[实时渲染中的坐标系变换，UE4投影变换](https://zhuanlan.zhihu.com/p/115395322)
 - https://learn.microsoft.com/en-us/windows/win32/direct3d9/projection-transform#a-w-friendly-projection-matrix
 - Reverse Z投影矩阵可以通过正常模式的投影矩阵乘以一个‘z reversal‘矩阵来构造，在[UE4透视投影矩阵](https://zhuanlan.zhihu.com/p/115395322)和[Depth Precision](https://web.archive.org/web/20220807195222/http://dev.theomader.com/depth-precision/)中都可以得到验证
